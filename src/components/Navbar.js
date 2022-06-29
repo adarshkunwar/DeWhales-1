@@ -27,10 +27,10 @@ function Navbar() {
                 </li>
                 {SidebarData.map((item, index)=> {
                     return(
-                        <div className = "list-items">
+                        <div className='list-items'>
                         <li key={index} className={item.className}>
                             <Link to={item.path}>
-                                {item.icon}
+                                {item.icon}&nbsp;&nbsp;
                                 <span className='title'>{item.title}</span>
                             </Link>
                         </li>
