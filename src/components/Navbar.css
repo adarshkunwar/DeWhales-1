@@ -81,7 +81,7 @@ span.title {
 .nav-menu a {
     text-decoration: none;
     align-self: baseline;
-    padding: 25px;
+    padding: 25px 12px;
 }
 
 li.nav-text a > svg {
