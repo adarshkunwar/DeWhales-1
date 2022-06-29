@@ -81,13 +81,14 @@ span.title {
 .nav-menu a {
     text-decoration: none;
     align-self: baseline;
-    padding: 20px;
+    padding: 25px 12px;
 }
 
 li.nav-text a > svg {
     height: 50px;
     width: 40px;
 }
-.list-items{
-    padding: 5px;
+.menu-close svg{
+    height: 40px;
+    width: 40px;
 }
