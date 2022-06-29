@@ -20,5 +20,11 @@ export const SidebarData = [
         path: '/gallery',
         icon: <IoIcons.IoMdPeople />,
         className: 'nav-text'
+    },
+    {
+        title: 'RoadMap',
+        path: '/gallery',
+        icon: <IoIcons.IoMdPeople />,
+        className: 'nav-text'
     }
 ]
