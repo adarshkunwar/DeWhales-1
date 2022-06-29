@@ -6,12 +6,18 @@ export const SidebarData = [
     {
         title: 'Home',
         path: '/',
-        icon: <AiIcons.AiFillHome style={{height:'50px',width:'50px'}} />,
+        icon: <AiIcons.AiFillHome/>,
         className: 'nav-text'
     },
     {
         title: 'Team',
         path: '/team',
+        icon: <IoIcons.IoMdPeople />,
+        className: 'nav-text'
+    },
+    {
+        title: 'Gallery',
+        path: '/gallery',
         icon: <IoIcons.IoMdPeople />,
         className: 'nav-text'
     }
