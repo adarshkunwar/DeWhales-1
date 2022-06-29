@@ -91,3 +91,10 @@ li.nav-text a > svg {
     width: 60px;
 
 }
+.list-items {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: flex-start;
+    align-items: center;
+    justify-content: left;
+}

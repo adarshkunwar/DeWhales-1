@@ -27,7 +27,7 @@ function Navbar() {
                 </li>
                 {SidebarData.map((item, index)=> {
                     return(
-                        <div>
+                        <div className = "list-items">
                         <li key={index} className={item.className}>
                             <Link to={item.path}>
                                 {item.icon}
