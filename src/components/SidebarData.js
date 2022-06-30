@@ -13,7 +13,7 @@ export const SidebarData = [
         className: 'nav-text'
     },
     {
-        title: 'RoadMap',
+        title: 'Roadmap',
         path: '/roadmap',
         icon: <BiMap />,
         className: 'nav-text'
