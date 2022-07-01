@@ -88,7 +88,38 @@ li.nav-text a > svg {
     height: 50px;
     width: 40px;
 }
+li.nav-text {
+    height: 65px;
+}
+
+.gap {
+    height: 50px;
+}
+
 .menu-close svg{
     height: 40px;
     width: 40px;
+}
+
+.foot-items {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+ /* .twitter {
+    height: 20px;
+    width: 20px;
+}  */
+
+.navimg {
+    height: 100px;
+    width: 350px;
+    padding-bottom: 0px;
+    object-fit: cover;
+    padding-top: 25px;
+    padding-right: 170px;
+
 }

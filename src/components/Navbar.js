@@ -2,9 +2,10 @@ import React, {useState} from 'react'
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { SidebarData } from './SidebarData';
+import { SidebarData, footerdata} from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons'
+import img from '../assets/navbarlogo.png';
 
 function Navbar() {
     const [sidebar, setSidebar] = useState(false)
@@ -17,7 +18,10 @@ function Navbar() {
             <Link to="/" className='menu-bars'>
                 <FaIcons.FaBars onClick={showSidebar}/>
             </Link>
+            <img src={img} alt='img' className='navimg'/>
+            {/* <button type="button" className="btn btn-outline-info mybtn">Connect Wallet</button> */}
         </div>
+        
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
             <ul className='nav-menu-items' onClick={showSidebar}>
                 <li className="navbar-toggle">
@@ -25,6 +29,8 @@ function Navbar() {
                         <AiIcons.AiOutlineClose />
                     </Link>
                 </li>
+                
+                <div className='gap'></div>
                 {SidebarData.map((item, index)=> {
                     return(
                         <div className='list-items'>
@@ -37,6 +43,18 @@ function Navbar() {
                         </div>
                     )
                 })}
+                 <div className='foot-items'>
+                {footerdata.map((item, index)=> {
+                    return(
+                        <li key={index} className={item.className} style={{listStyleType: 'none'}}>
+                            <a href={item.href} target='_blank' rel="noreferrer">
+                                {item.icon}&nbsp;&nbsp;
+                                
+                            </a>
+                        </li>
+                    )
+                })}
+                </div>
             </ul>
         </nav>
         </IconContext.Provider>
