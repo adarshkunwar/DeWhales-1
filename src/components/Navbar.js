@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
+import * as ImIcons from "react-icons/im";
 import { Link } from "react-router-dom";
 import { SidebarData, footerdata} from './SidebarData';
 import './Navbar.css';
@@ -26,7 +26,7 @@ function Navbar() {
             <ul className='nav-menu-items' onClick={showSidebar}>
                 <li className="navbar-toggle">
                     <Link to="/" className='menu-close'>
-                        <AiIcons.AiOutlineClose />
+                        <ImIcons.ImCross />
                     </Link>
                 </li>
                 
