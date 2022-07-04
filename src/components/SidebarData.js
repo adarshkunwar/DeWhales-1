@@ -36,19 +36,20 @@ export const SidebarData = [
 ]
 
 export const footerdata =  [
-        {
-            href: 'https://www.twitter.com/dewhales_nft',
-            icon: <FaIcons.FaTwitter size={25}/>,
-            className: 'links'
-        },
-        {
-            href: 'https://discord.gg/UTP2Hgau',
-            icon: <FaIcons.FaDiscord size={25}/>,
-            className: 'links'
-        },
+    {
+        href: 'https://discord.gg/UTP2Hgau',
+        icon: <FaIcons.FaDiscord size={25}/>,
+        className: 'links'
+    },
         {
             href: 'https://www.diamondapp.com/u/dewhales',
             icon: <IoDiamondSharp size={25}/>,
+            className: 'links'
+        },
+        
+        {
+            href: 'https://www.twitter.com/dewhales_nft',
+            icon: <FaIcons.FaTwitter size={25}/>,
             className: 'links'
         }
     ]
