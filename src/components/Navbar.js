@@ -19,7 +19,9 @@ function Navbar() {
                 <FaIcons.FaBars onClick={showSidebar}/>
             </Link>
             <img src={img} alt='img' className='navimg'/>
-            {/* <button type="button" className="btn btn-outline-info mybtn">Connect Wallet</button> */}
+            <div className='mybutton'>
+            { <button type="button" className="mybtn">Connect Wallet</button> }
+        </div>
         </div>
         
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>

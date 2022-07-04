@@ -2,7 +2,6 @@
     background-color: #060b26;
     height: 70px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
 
 }
@@ -62,6 +61,32 @@
     align-items: center;
 }
 
+.mybtn {
+
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    border: 0px;
+}
+
+.mybtn:hover {
+cursor: pointer;
+background-color: rgb(0, 189, 189);
+color: white;
+
+}
+
+.mybutton { 
+    position: fixed;
+    top: 16px;
+    right: 10px;
+    
+} 
+
 span {
     
     color: white;
@@ -93,7 +118,7 @@ li.nav-text {
 }
 
 .gap {
-    height: 50px;
+    height: 40px;
 }
 
 .menu-close svg{
@@ -113,11 +138,11 @@ li.nav-text {
 
 
 .navimg {
-    height: 100px;
+    height: 90px;
     width: 350px;
     padding-bottom: 0px;
     object-fit: cover;
-    padding-top: 25px;
-    padding-right: 170px;
+    padding-top: 23px;
+    padding-right: 190px;
 
 }
