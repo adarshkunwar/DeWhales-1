@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import * as FaIcons from "react-icons/fa";
-import * as ImIcons from "react-icons/im";
+import { CgMenuRound } from "react-icons/cg";
+import { CgCloseO } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import { SidebarData, footerdata} from './SidebarData';
 import './Navbar.css';
@@ -69,10 +69,12 @@ function Navbar() {
     <>
     <IconContext.Provider value={{color:'#fff'}}>
         <div className="navbar">
+            
             <Link to="/" className='menu-bars'>
-                <FaIcons.FaBars onClick={showSidebar}/>
+            <CgMenuRound className='openicon' onClick={showSidebar}/>
             </Link>
             <img src={img} alt='img' className='navimg'/>
+            
             <div className='mybutton'>
              <button type="button" className="mybtn" onClick={handleClick}>{success?`${name}`:loading?"Loading...":"Connect Wallet"}</button> 
         </div>
@@ -82,7 +84,7 @@ function Navbar() {
             <ul className='nav-menu-items' onClick={showSidebar}>
                 <li className="navbar-toggle">
                     <Link to="/" className='menu-close'>
-                        <ImIcons.ImCross />
+                        <CgCloseO/>
                     </Link>
                 </li>
                 

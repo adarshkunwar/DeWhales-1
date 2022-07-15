@@ -11,7 +11,7 @@ export const SidebarData = [
     {
         title: 'Home',
         path: '/',
-        icon: <AiIcons.AiFillHome/>,
+        icon: <AiIcons.AiFillHome />,
         className: 'nav-text'
     },
     {
@@ -43,7 +43,7 @@ export const footerdata =  [
     },
         {
             href: 'https://www.diamondapp.com/u/dewhales',
-            icon: <IoDiamondSharp size={25}/>,
+            icon: <IoDiamondSharp size={25} />,
             className: 'links'
         },
         

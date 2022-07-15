@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #060b26;
+    background-color: #072049;
     height: 70px;
     display: flex;
     align-items: center;
@@ -7,16 +7,16 @@
 }
 
 .menu-bars {
-    margin-left: 2rem;
+    margin-left: 1rem;
     font-size: 2rem;
     background: none;
-    padding-top: 6px;
+    padding-top: 15px;
 }
 
 .nav-menu {
     text-decoration: none;
-    background-color: #060b26;
-    width: 200px;
+    background-color: #072049;
+    width: 220px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -53,7 +53,7 @@
 }
 
 .navbar-toggle {
-    background-color: #060b26;
+    background-color: #072049;
     width: 100%;
     height: 80px;
     display: flex;
@@ -122,9 +122,11 @@ li.nav-text {
 }
 
 .menu-close svg{
-    height: 60px;
-    width: 60px;
-    padding-left: 15px;
+    box-shadow: none;
+    height: 70px;
+    width: 70px;
+    padding-left: 0px;
+    padding-right: 20px;
     padding-bottom: 33px;
 }
 
@@ -140,9 +142,19 @@ li.nav-text {
 .navimg {
     height: 90px;
     width: 350px;
-    padding-bottom: 0px;
+    padding-bottom: 1px;
     object-fit: cover;
-    padding-top: 23px;
+    padding-top: 20px;
     padding-right: 190px;
 
+}
+
+.openicon {
+    height: 40px;
+    width: 40px;
+}
+
+.closeicon {
+    height: 80px;
+    width: 80px;
 }
