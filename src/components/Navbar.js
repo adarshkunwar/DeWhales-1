@@ -7,8 +7,62 @@ import './Navbar.css';
 import { IconContext } from 'react-icons'
 import img from '../assets/navbarlogo.png';
 
+import { identity } from "bitclout-sdk";
+// const host = "https://deso-backend.herokuapp.com";
+const host = "http://localhost:4000";
+
+
 function Navbar() {
-    const [sidebar, setSidebar] = useState(false)
+    const [sidebar, setSidebar] = useState(false);
+    const [name, setName] = useState("User");
+    const [success, setSuccess] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [Key, setKey] = useState(null);
+
+    const fetchProfile = async (publicKey) => {
+        // todo API calls in the backend
+        const response = await fetch(`${host}/`, {
+          method: "GET",
+          headers: {
+            "Content-type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+        });
+        const json = await response.json();
+        console.log(json);
+    
+        try {
+          const responsef = await fetch(`${host}/get-single-profile`, {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json",
+            },
+            body: JSON.stringify({
+              PublicKeyBase58Check: publicKey,
+            }),
+          });
+          const jsonf = await responsef.json();
+          // console.log(jsonf);
+          setName(jsonf.Username);
+          setSuccess(true);
+        } catch (error) {
+          console.log("Unable to Login !", "Error!", 5000);
+        }
+        setLoading(false);
+      };
+
+
+    const handleClick = async () => {
+        setLoading(true);
+        const response = await identity.login({ accessLevel: 2 });
+        console.log(response);
+        const jsonObj = JSON.stringify(response);
+        localStorage.setItem("payload", jsonObj);
+        const publicKey = response.publicKeyAdded;
+        fetchProfile(publicKey);
+        setKey(publicKey);
+      };
+
 
     const showSidebar = () => { setSidebar(!sidebar); console.log(sidebar) }
   return (
@@ -20,7 +74,7 @@ function Navbar() {
             </Link>
             <img src={img} alt='img' className='navimg'/>
             <div className='mybutton'>
-            { <button type="button" className="mybtn">Connect Wallet</button> }
+             <button type="button" className="mybtn" onClick={handleClick}>{success?`${name}`:loading?"Loading...":"Connect Wallet"}</button> 
         </div>
         </div>
         
