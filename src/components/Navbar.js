@@ -8,8 +8,8 @@ import { IconContext } from 'react-icons'
 import img from '../assets/navbarlogo.png';
 
 import { identity } from "bitclout-sdk";
-// const host = "https://deso-backend.herokuapp.com";
-const host = "http://localhost:4000";
+const host = "https://deso-backend.herokuapp.com";
+// const host = "http://localhost:4000";
 
 
 function Navbar() {
