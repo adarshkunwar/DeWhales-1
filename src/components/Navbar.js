@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { CgMenuRound } from "react-icons/cg";
 import { CgCloseO } from "react-icons/cg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { SidebarData, footerdata} from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons'
@@ -19,7 +19,7 @@ function Navbar() {
     const [loading, setLoading] = useState(false);
     // eslint-disable-next-line
     const [Key, setKey] = useState(null);
-
+    const location = useLocation();
     const fetchProfile = async (publicKey) => {
         // todo API calls in the backend
         const response = await fetch(`${host}/`, {
@@ -71,9 +71,9 @@ function Navbar() {
     <IconContext.Provider value={{color:'#fff'}}>
         <div className="navbar">
             
-            <Link to="/" className='menu-bars'>
+            <div className='menu-bars'>
             <CgMenuRound className='openicon' onClick={showSidebar}/>
-            </Link>
+            </div>
             <img src={img} alt='img' className='navimg'/>
             
             <div className='mybutton'>
@@ -84,7 +84,7 @@ function Navbar() {
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
             <ul className='nav-menu-items' onClick={showSidebar}>
                 <li className="navbar-toggle">
-                    <Link to="/" className='menu-close'>
+                    <Link to={location.pathname} className='menu-close'>
                         <CgCloseO/>
                     </Link>
                 </li>
