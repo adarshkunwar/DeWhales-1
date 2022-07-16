@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 .navbar {
     background-color: #072049;
     height: 70px;
@@ -90,18 +91,27 @@ color: white;
 span {
     
     color: white;
-    
     margin-bottom: 10px;
     height: 10%;
+}
 
+.side-text {
+    color: rgb(255, 255, 255);
+    font-family: 'Secular One', sans-serif;
+
+}
+
+.side-text:hover { 
+    color: black;
+    background-color: rgb(16, 184, 184);
+    border-radius: 2px;
 }
 
 span.title {
     font-size: 25px;
+    font-style: normal;
     text-align: center;
     justify-content: center;
-    
-    
 }
 .nav-menu a {
     text-decoration: none;
@@ -112,6 +122,8 @@ span.title {
 li.nav-text a > svg {
     height: 50px;
     width: 40px;
+    padding-top: 0px;
+    padding-bottom: 10px;
 }
 li.nav-text {
     height: 65px;
@@ -136,6 +148,20 @@ li.nav-text {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding-bottom: 150px;
+}
+
+.foot-items svg {
+    border-radius: 100px;
+    border-style: groove;
+    border-width: 2px;
+
+    padding: 5px 5px;
+}
+
+.links svg:hover {
+    background-color: rgb(0, 136, 136);
+    
 }
 
 
@@ -146,7 +172,6 @@ li.nav-text {
     object-fit: cover;
     padding-top: 20px;
     padding-right: 190px;
-
 }
 
 .openicon {

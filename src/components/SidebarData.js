@@ -3,31 +3,38 @@ import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
 import { IoMdPhotos } from 'react-icons/io';
 import { IoDiamondSharp } from 'react-icons/io5';
+import { SiGooglemessages } from 'react-icons/si';
 import { BiMap } from 'react-icons/bi'
 import * as FaIcons from "react-icons/fa";
 
 
 export const SidebarData = [
     {
-        title: 'Home',
+        title: <div className='side-text'>Home</div>,
         path: '/',
         icon: <AiIcons.AiFillHome />,
         className: 'nav-text'
     },
     {
-        title: 'Roadmap',
+        title: <div className='side-text'>Roadmap</div>,
         path: '/roadmap',
         icon: <BiMap />,
         className: 'nav-text'
     },
     {
-        title: 'Gallery',
+        title: <div className='side-text'>Chats</div>,
+        path: '/chats',
+        icon: <SiGooglemessages />,
+        className: 'nav-text'
+    },
+    {
+        title: <div className='side-text'>Gallery</div>,
         path: '/gallery',
         icon: <IoMdPhotos />,
         className: 'nav-text' 
     },
     {
-        title: 'Team',
+        title: <div className='side-text'>Team</div>,
         path: '/team',
         icon: <IoIcons.IoMdPeople />,
         className: 'nav-text'
@@ -38,18 +45,18 @@ export const SidebarData = [
 export const footerdata =  [
     {
         href: 'https://discord.gg/UTP2Hgau',
-        icon: <FaIcons.FaDiscord size={25}/>,
+        icon: <FaIcons.FaDiscord size={35} style={{color:'White'}}/>,
         className: 'links'
     },
         {
             href: 'https://www.diamondapp.com/u/dewhales',
-            icon: <IoDiamondSharp size={25} />,
+            icon: <IoDiamondSharp size={35} style={{color:'White'}}/>,
             className: 'links'
         },
         
         {
             href: 'https://www.twitter.com/dewhales_nft',
-            icon: <FaIcons.FaTwitter size={25}/>,
+            icon: <FaIcons.FaTwitter  size={35} style={{color:'White'}}/>,
             className: 'links'
         }
     ]

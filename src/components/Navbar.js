@@ -17,6 +17,7 @@ function Navbar() {
     const [name, setName] = useState("User");
     const [success, setSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
+    // eslint-disable-next-line
     const [Key, setKey] = useState(null);
 
     const fetchProfile = async (publicKey) => {
@@ -63,8 +64,8 @@ function Navbar() {
         setKey(publicKey);
       };
 
-
-    const showSidebar = () => { setSidebar(!sidebar); console.log(sidebar) }
+    
+      const showSidebar = () => { setSidebar(!sidebar); console.log(sidebar) }
   return (
     <>
     <IconContext.Provider value={{color:'#fff'}}>
@@ -76,7 +77,7 @@ function Navbar() {
             <img src={img} alt='img' className='navimg'/>
             
             <div className='mybutton'>
-             <button type="button" className="mybtn" onClick={handleClick}>{success?`${name}`:loading?"Loading...":"Connect Wallet"}</button> 
+             <button type="button" className="mybtn" onClick={handleClick}>{success?`${name}`:loading?"Loading..":"Connect Wallet"}</button> 
         </div>
         </div>
         
