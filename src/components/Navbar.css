@@ -63,7 +63,6 @@
 }
 
 .mybtn {
-
     color: rgb(0, 0, 0);
     font-size: 15px;
     background-color: aqua;
@@ -72,6 +71,7 @@
     font-weight: bold;
     transition-duration: 0.4s;
     border: 0px;
+    margin-top: 1px;
 }
 
 .mybtn:hover {
@@ -152,7 +152,7 @@ li.nav-text {
 }
 
 .foot-items svg {
-    border-radius: 100px;
+    border-radius: 15px;
     border-style: groove;
     border-width: 2px;
 
@@ -177,6 +177,10 @@ li.nav-text {
 .openicon {
     height: 40px;
     width: 40px;
+}
+
+.svg.openicon:hover {
+    cursor: pointer;
 }
 
 .closeicon {
