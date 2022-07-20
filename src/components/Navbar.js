@@ -90,6 +90,7 @@ function Navbar() {
                 </li>
                 
                 <div className='gap'></div>
+              
                 {SidebarData.map((item, index)=> {
                     return(
                         <div className='list-items'>
@@ -100,6 +101,7 @@ function Navbar() {
                             </Link>
                         </li>
                         </div>
+                        
                     )
                 })}
                  <div className='foot-items'>
