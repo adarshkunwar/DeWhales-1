@@ -76,12 +76,11 @@ function Navbar() {
             </div>
             <img src={img} alt='img' className='navimg'/>
             
-            <div className='mybutton'>
-             <button type="button" className="mybtn" onClick={handleClick}>{success?`${name}`:loading?"Loading..":"Connect Wallet"}</button> 
-        </div>
+            
         </div>
         
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+        
             <ul className='nav-menu-items' onClick={showSidebar}>
                 <li className="navbar-toggle">
                     <Link to={location.pathname} className='menu-close'>
@@ -117,6 +116,9 @@ function Navbar() {
                 })}
                 </div>
             </ul>
+            <div className='mybutton'>
+             <button type="button" className="mybtn" onClick={handleClick}>{success?`${name}`:loading?"Loading..":"Connect Wallet"}</button> 
+        </div>
         </nav>
         </IconContext.Provider>
     </>
