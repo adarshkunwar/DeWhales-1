@@ -15,7 +15,7 @@
    background-color: white;
  }
  .profile-card{
-   position: relative;
+   /*position: relative; */
    width: 220px;
    height: 220px;
    background: #fff;
@@ -30,7 +30,7 @@
    height: 260px;
  }
  .profile-card .img{
-   position: relative;
+   /* position: relative; */
    width: 100%;
    height: 100%;
    transition: .6s;
