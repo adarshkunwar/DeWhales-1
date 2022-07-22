@@ -96,7 +96,7 @@ function Navbar() {
                         <li key={index} className={item.className}>
                             <Link to={item.path}>
                                 {item.icon}&nbsp;&nbsp;
-                                <span className='title'>{item.title}</span>
+                                <span className={`title ${location.pathname===item.path?'side-text-active':''}`}>{item.title}</span>
                             </Link>
                         </li>
                         </div>
