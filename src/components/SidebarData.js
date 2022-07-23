@@ -4,8 +4,8 @@ import * as IoIcons from "react-icons/io";
 import { IoMdPhotos } from 'react-icons/io';
 import { IoDiamondSharp } from 'react-icons/io5';
 import { SiGooglemessages } from 'react-icons/si';
-import { BiMap } from 'react-icons/bi'
 import * as FaIcons from "react-icons/fa";
+import { RiRoadMapFill} from 'react-icons/ri';
 
 
 export const SidebarData = [
@@ -18,7 +18,7 @@ export const SidebarData = [
     {
         title: <div className='side-text'>Roadmap</div>,
         path: '/roadmap',
-        icon: <BiMap />,
+        icon: <RiRoadMapFill />,
         className: 'nav-text'
     },
     {
