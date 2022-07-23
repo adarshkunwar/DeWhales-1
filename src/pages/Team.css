@@ -6,13 +6,14 @@
    box-sizing: border-box;
  }
  
- @media only screen and (max-width: 900px){
+ @media only screen and (max-width: 820px){
   .main {
-    flex-direction: column;
+    display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
   }
   .profile-card{
-    flex: 50%;
+    margin: 0 5px;
   }
  }
 
@@ -26,14 +27,14 @@
    background-color: white;
  }
  .profile-card{
-   width: 160px;
-   height: 160px;
+   width: 170px;
+   height: 170px;
    background: #fff;
    padding: 30px;
    border-radius: 50%;
    box-shadow: 0 0 22px #3336;
    transition: .6s;
-   margin: 0 25px;
+   margin: auto;
  }
  .profile-card:hover{
    border-radius: 10px;
