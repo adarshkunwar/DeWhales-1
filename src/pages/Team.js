@@ -9,7 +9,7 @@ export const Team = () => {
     <div className="main">
         <div className="profile-card">
             <div className="img">
-                <img src="https://www.arweave.net/CzK8uy6B74TkdjrkFfgz8ygN1fSlozAY1eLMZFGeDq0" alt='333'/>
+                <img src="https://www.arweave.net/CzK8uy6B74TkdjrkFfgz8ygN1fSlozAY1eLMZFGeDq0" alt='334'/>
             </div>
             <div className="caption">
                 <h3>anku</h3>
