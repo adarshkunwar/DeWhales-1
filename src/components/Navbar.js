@@ -75,7 +75,9 @@ function Navbar() {
             <CgMenuRound className='openicon' onClick={showSidebar}/>
             </div>
             <img src={img} alt='img' className='navimg'/>
-            
+            <div className='mybutton'>
+             <button type="button" className="mybtn" onClick={handleClick}>{success?`${name}`:loading?"Loading..":"Connect Wallet"}</button> 
+        </div>
             
         </div>
         
@@ -116,9 +118,7 @@ function Navbar() {
                 })}
                 </div>
             </ul>
-            <div className='mybutton'>
-             <button type="button" className="mybtn" onClick={handleClick}>{success?`${name}`:loading?"Loading..":"Connect Wallet"}</button> 
-        </div>
+            
         </nav>
         </IconContext.Provider>
     </>
