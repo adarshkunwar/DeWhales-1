@@ -15,8 +15,8 @@ export const Team = () => {
                 <h3>anku</h3>
                 <p>Founder</p>
                     <div className="social-links">
-                    <IoDiamondSharp />
-                    <FaIcons.FaTwitter />
+                    <IoDiamondSharp size={25}/>&nbsp;&nbsp;
+                    <FaIcons.FaTwitter size={25}/>
                     </div>
                     </div>
         </div>
@@ -28,8 +28,8 @@ export const Team = () => {
                 <h3>aryog</h3>
                 <p>Backend Developer</p>
                     <div className="social-links">
-                    <IoDiamondSharp />
-                    <FaIcons.FaTwitter />
+                    <IoDiamondSharp size={25}/>&nbsp;&nbsp;
+                    <FaIcons.FaTwitter size={25}/>
                     </div>
                     </div>
         </div>
@@ -41,8 +41,8 @@ export const Team = () => {
                 <h3>Nona Rivers</h3>
                 <p>Artist</p>
                     <div className="social-links">
-                    <IoDiamondSharp />
-                    <FaIcons.FaTwitter />
+                    <IoDiamondSharp size={25}/>&nbsp;&nbsp;
+                    <FaIcons.FaTwitter size={25}/>
                     </div>
                     </div>
         </div>
@@ -54,8 +54,8 @@ export const Team = () => {
                 <h3 className='alex'>alexcommoner</h3>
                 <p>Game Dev</p>
                     <div className="social-links">
-                    <IoDiamondSharp />
-                    <FaIcons.FaTwitter />
+                    <IoDiamondSharp size={25}/>&nbsp;&nbsp;
+                    <FaIcons.FaTwitter size={25}/>
                     </div>
                     </div>
         </div> 
