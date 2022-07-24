@@ -10,7 +10,7 @@
   .main {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 10px;
   }
   .profile-card{
     margin: 0 5px;
@@ -69,10 +69,11 @@
  }
  .caption h3{
    font-size: 21px;
+   color: rgb(16, 141, 141);
  }
  .caption p{
    font-size: 16px;
-   color: #0c52a1;
+   color: black;
    margin: 2px 0 9px 0;
  }
  .caption .social-links a{
@@ -83,4 +84,9 @@
  }
  .social-links a:hover{
    color: #0c52a1;
+   padding-left: 40px;
+ }
+
+ .h3.alex {
+  padding-left: 120px;
  }

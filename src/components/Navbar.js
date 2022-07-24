@@ -72,7 +72,7 @@ function Navbar() {
         <div className="navbar">
             
             <div className='menu-bars'>
-            <CgMenuRound className='openicon' onClick={showSidebar}/>
+            <CgMenuRound className='openicon'  onClick={showSidebar}/>
             </div>
             <img src={img} alt='img' className='navimg'/>
             <div className='mybutton'>

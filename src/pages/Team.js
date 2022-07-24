@@ -9,7 +9,7 @@ export const Team = () => {
     <div className="main">
         <div className="profile-card">
             <div className="img">
-                <img src="https://www.arweave.net/CzK8uy6B74TkdjrkFfgz8ygN1fSlozAY1eLMZFGeDq0" alt='334'/>
+                <img src="https://www.arweave.net/YqrPzGzwhGVSxMMSqi38w9dv3ZNa_mS7ZM2H5rXGSvg" alt='334'/>
             </div>
             <div className="caption">
                 <h3>anku</h3>
@@ -22,11 +22,11 @@ export const Team = () => {
         </div>
         <div className="profile-card">
             <div className="img">
-                <img src="https://www.arweave.net/CzK8uy6B74TkdjrkFfgz8ygN1fSlozAY1eLMZFGeDq0" alt='333'/>
+                <img src="https://www.arweave.net/m1LLmj3V0XJoQ48kYPM-vNk7v5zPWh6tRg1ScyMsT8o" alt='333'/>
             </div>
             <div className="caption">
-                <h3>anku</h3>
-                <p>Founder</p>
+                <h3>aryog</h3>
+                <p>Backend Developer</p>
                     <div className="social-links">
                     <IoDiamondSharp />
                     <FaIcons.FaTwitter />
@@ -35,11 +35,11 @@ export const Team = () => {
         </div>
          <div className="profile-card">
             <div className="img">
-                <img src="https://www.arweave.net/CzK8uy6B74TkdjrkFfgz8ygN1fSlozAY1eLMZFGeDq0" alt='333'/>
+                <img src="https://www.arweave.net/yNzOVD-zjgGpSsO9eIVZecWIyh0ZcK4trqE-aQlVfMw" alt='333'/>
             </div>
             <div className="caption">
-                <h3>anku</h3>
-                <p>Founder</p>
+                <h3>Nona Rivers</h3>
+                <p>Artist</p>
                     <div className="social-links">
                     <IoDiamondSharp />
                     <FaIcons.FaTwitter />
@@ -48,11 +48,11 @@ export const Team = () => {
         </div>
         <div className="profile-card">
             <div className="img">
-                <img src="https://www.arweave.net/CzK8uy6B74TkdjrkFfgz8ygN1fSlozAY1eLMZFGeDq0" alt='333'/>
+                <img src="https://www.arweave.net/iaJZ9FFrceIps8gbiD3_3z0RCzG59Z3_6C5wyOynpcs" alt='333'/>
             </div>
             <div className="caption">
-                <h3>anku</h3>
-                <p>Founder</p>
+                <h3 className='alex'>alexcommoner</h3>
+                <p>Game Dev</p>
                     <div className="social-links">
                     <IoDiamondSharp />
                     <FaIcons.FaTwitter />
