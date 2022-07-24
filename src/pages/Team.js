@@ -15,8 +15,12 @@ export const Team = () => {
                 <h3>anku</h3>
                 <p>Founder</p>
                     <div className="social-links">
-                    <IoDiamondSharp size={25}/>&nbsp;&nbsp;
-                    <FaIcons.FaTwitter size={25}/>
+                        <a href='https://www.diamondapp.com/u/dewhales' target='_blank' rel="noreferrer">
+                        <IoDiamondSharp size={25}/>
+                        </a>
+                        <a href='https://www.diamondapp.com/u/dewhales' target='_blank' rel="noreferrer">
+                        <FaIcons.FaTwitter size={25}/>
+                        </a>
                     </div>
                     </div>
         </div>
@@ -28,8 +32,12 @@ export const Team = () => {
                 <h3>aryog</h3>
                 <p>Backend Developer</p>
                     <div className="social-links">
-                    <IoDiamondSharp size={25}/>&nbsp;&nbsp;
-                    <FaIcons.FaTwitter size={25}/>
+                        <a href='https://www.diamondapp.com/u/dewhales' target='_blank' rel="noreferrer">
+                        <IoDiamondSharp size={25}/>
+                        </a>
+                        <a href='https://www.diamondapp.com/u/dewhales' target='_blank' rel="noreferrer">
+                        <FaIcons.FaTwitter size={25}/>
+                        </a>
                     </div>
                     </div>
         </div>
@@ -41,8 +49,12 @@ export const Team = () => {
                 <h3>Nona Rivers</h3>
                 <p>Artist</p>
                     <div className="social-links">
-                    <IoDiamondSharp size={25}/>&nbsp;&nbsp;
-                    <FaIcons.FaTwitter size={25}/>
+                    <a href='https://www.diamondapp.com/u/dewhales' target='_blank' rel="noreferrer">
+                        <IoDiamondSharp size={25}/>
+                        </a>
+                        <a href='https://www.diamondapp.com/u/dewhales' target='_blank' rel="noreferrer">
+                        <FaIcons.FaTwitter size={25}/>
+                        </a>
                     </div>
                     </div>
         </div>
@@ -54,8 +66,12 @@ export const Team = () => {
                 <h3 className='alex'>alexcommoner</h3>
                 <p>Game Dev</p>
                     <div className="social-links">
-                    <IoDiamondSharp size={25}/>&nbsp;&nbsp;
-                    <FaIcons.FaTwitter size={25}/>
+                        <a href='https://www.diamondapp.com/u/dewhales' target='_blank' rel="noreferrer">
+                        <IoDiamondSharp size={25}/>
+                        </a>
+                        <a href='https://www.diamondapp.com/u/dewhales' target='_blank' rel="noreferrer">
+                        <FaIcons.FaTwitter size={25}/>
+                        </a>
                     </div>
                     </div>
         </div> 

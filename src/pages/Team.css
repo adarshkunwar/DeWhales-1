@@ -88,9 +88,10 @@
  }
  .social-links a:hover{
    color: #0c52a1;
-   padding-left: 40px;
  }
-
+.social-links>svg{
+  cursor: pointer;
+}
  .h3.alex {
   padding-left: 120px;
  }
