@@ -15,10 +15,10 @@ export const Team = () => {
                 <h3>anku</h3>
                 <p>Founder</p>
                     <div className="social-links">
-                        <a href='https://www.diamondapp.com/u/dewhales' target='_blank' rel="noreferrer">
+                        <a href='https://www.diamondapp.com/u/anku' target='_blank' rel="noreferrer">
                         <IoDiamondSharp size={25}/>
                         </a>
-                        <a href='https://www.diamondapp.com/u/dewhales' target='_blank' rel="noreferrer">
+                        <a href='https://www.twitter.com/whoisanku' target='_blank' rel="noreferrer">
                         <FaIcons.FaTwitter size={25}/>
                         </a>
                     </div>
@@ -32,12 +32,10 @@ export const Team = () => {
                 <h3>aryog</h3>
                 <p>Backend Developer</p>
                     <div className="social-links">
-                        <a href='https://www.diamondapp.com/u/dewhales' target='_blank' rel="noreferrer">
+                        <a href='https://www.diamondapp.com/u/aryog' target='_blank' rel="noreferrer">
                         <IoDiamondSharp size={25}/>
                         </a>
-                        <a href='https://www.diamondapp.com/u/dewhales' target='_blank' rel="noreferrer">
-                        <FaIcons.FaTwitter size={25}/>
-                        </a>
+                        
                     </div>
                     </div>
         </div>
@@ -46,13 +44,13 @@ export const Team = () => {
                 <img src="https://www.arweave.net/yNzOVD-zjgGpSsO9eIVZecWIyh0ZcK4trqE-aQlVfMw" alt='333'/>
             </div>
             <div className="caption">
-                <h3>Nona Rivers</h3>
+                <h3>Nona</h3>
                 <p>Artist</p>
                     <div className="social-links">
-                    <a href='https://www.diamondapp.com/u/dewhales' target='_blank' rel="noreferrer">
+                    <a href='https://diamondapp.com/u/NonaRivers' target='_blank' rel="noreferrer">
                         <IoDiamondSharp size={25}/>
                         </a>
-                        <a href='https://www.diamondapp.com/u/dewhales' target='_blank' rel="noreferrer">
+                        <a href='https://twitter.com/_nonarivers_' target='_blank' rel="noreferrer">
                         <FaIcons.FaTwitter size={25}/>
                         </a>
                     </div>
@@ -63,13 +61,13 @@ export const Team = () => {
                 <img src="https://www.arweave.net/iaJZ9FFrceIps8gbiD3_3z0RCzG59Z3_6C5wyOynpcs" alt='333'/>
             </div>
             <div className="caption">
-                <h3 className='alex'>alexcommoner</h3>
+                <h3 className='alex'>alex</h3>
                 <p>Game Dev</p>
                     <div className="social-links">
-                        <a href='https://www.diamondapp.com/u/dewhales' target='_blank' rel="noreferrer">
+                        <a href='https://www.diamondapp.com/u/alexcommoner' target='_blank' rel="noreferrer">
                         <IoDiamondSharp size={25}/>
                         </a>
-                        <a href='https://www.diamondapp.com/u/dewhales' target='_blank' rel="noreferrer">
+                        <a href='https://twitter.com/AlexCommoner' target='_blank' rel="noreferrer">
                         <FaIcons.FaTwitter size={25}/>
                         </a>
                     </div>
