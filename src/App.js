@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Gallery } from './pages/Gallery';
-import { Roadmap } from './pages/Roadmap';
+import { Vision } from './pages/Vision';
 import { Chat } from './pages/Chat';
 import { Team } from './pages/Team';
 
@@ -16,7 +16,7 @@ function App() {
       <Route path='/' element= {<Home /> }/>
       </Routes>
       <Routes>
-      <Route exact path='/roadmap' element= {<Roadmap /> }/>
+      <Route exact path='/vision' element= {<Vision /> }/>
       </Routes>
       <Routes>
       <Route exact path='/chats' element= {<Chat/> }/>

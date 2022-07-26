@@ -16,8 +16,8 @@ export const SidebarData = [
         className: 'nav-text'
     },
     {
-        title: <div className='side-text'>Roadmap</div>,
-        path: '/roadmap',
+        title: <div className='side-text'>Vision</div>,
+        path: '/vision',
         icon: <RiRoadMapFill />,
         className: 'nav-text'
     },
