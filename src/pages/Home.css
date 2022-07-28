@@ -1,9 +1,12 @@
-.roadmap {
-    display: block;
-    margin-left: auto;
-    margin-bottom: 100px;
-    float: right;
-  width: 60%;
-    
-    
+img.roadmap{
+  height:80%;
+  width: 65vw;
+  float: right;
+  margin-top: -15%;
+  margin-right: -8%;
+  
+}
+.home{
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
