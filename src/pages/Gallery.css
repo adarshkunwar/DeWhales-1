@@ -1,0 +1,9 @@
+.gallery {
+    font-size: 6vh;
+    color: rgb(0, 82, 129);
+    text-align: center;
+    margin-top: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

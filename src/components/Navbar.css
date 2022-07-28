@@ -191,6 +191,7 @@ li.nav-text {
     z-index: 100;
     transition-property: width;
     transition-duration: 1s;
+    cursor: pointer;
 
 }
 
