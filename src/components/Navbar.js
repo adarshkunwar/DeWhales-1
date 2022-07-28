@@ -12,7 +12,7 @@ const host = "https://deso-backend.herokuapp.com";
 // const host = "http://localhost:4000";
 
 
-function Navbar() {
+function Navbar({setState}) {
     const [sidebar, setSidebar] = useState(false);
     const [name, setName] = useState("User");
     const [success, setSuccess] = useState(false);
@@ -46,6 +46,7 @@ function Navbar() {
           // console.log(jsonf);
           setName(jsonf.Username);
           setSuccess(true);
+          setState("true");
         } catch (error) {
           console.log("Unable to Login !", "Error!", 5000);
         }

@@ -19,3 +19,11 @@ img.roadmap{
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
+/* Button element css */
+
+.mintbtn{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}

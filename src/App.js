@@ -1,3 +1,4 @@
+import React,{useState} from 'react';
 import './App.css';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
@@ -8,12 +9,15 @@ import { Chat } from './pages/Chat';
 import { Team } from './pages/Team';
 
 function App() {
+  const [valid, setValid] = useState(false);
+  const setState=(data)=>{
+    setValid(data);
+  }
   return (
-
     <Router>
-      <Navbar />
+      <Navbar setState={setState}/>
       <Routes>
-      <Route path='/' element= {<Home /> }/>
+      <Route path='/' element= {<Home valid={valid}/> }/>
       </Routes>
       <Routes>
       <Route exact path='/vision' element= {<Vision /> }/>
