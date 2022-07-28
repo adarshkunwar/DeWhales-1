@@ -1,3 +1,12 @@
+@media only screen and (max-width: 1000px){
+  .home{
+    height:80%;
+  width: 80vw;
+  }
+ }
+
+
+
 img.roadmap{
   height:80%;
   width: 65vw;
