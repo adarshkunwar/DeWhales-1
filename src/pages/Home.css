@@ -13,12 +13,35 @@ src: url(../assets/fonts/pixel.TTF);
 }
 
 
+@media only screen and (max-width: 1000px){
 
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+.hometext {
+  font-size: 10px;
+  margin-right:50px;
+  padding-top: 45px;
+}
+
+.mint_btn {
+  font-size: 10px;
+  padding: 5px;
+}
+
+img.roadmap {
+  margin-right: 35px;
+  height: 400px;
+  width: 400px;
+}
+
+}
 
 
 img.roadmap{
-  height:90%;
-  width: 100vh;
+  min-height:90%;
+  min-width: 48%;
   margin-top: -70px;
   
   float: right;
@@ -42,15 +65,15 @@ img.roadmap{
   display:flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
 }
 
 .mint_btn {
   color: #002631;
-  font-size: 25px;
+  font-size: 1.5em;
   background-color: aqua;
-  padding: 15px;
-  border-radius: 25px;
+  padding: 0.8rem;
+  border-radius: 50px;
   font-weight: bold;
   transition-duration: 0.4s;
   border: 0px;
