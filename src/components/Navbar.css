@@ -183,11 +183,11 @@ li.nav-text {
 
 .navimg {
     height: 90px;
-    width: 350px;
+    width: 240px;
     padding-bottom: 1px;
     object-fit: cover;
     padding-top: 20px;
-    padding-right: 190px;
+    padding-right: 80px;
     z-index: 100;
     transition-property: width;
     transition-duration: 1s;

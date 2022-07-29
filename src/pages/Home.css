@@ -1,23 +1,39 @@
-@media only screen and (max-width: 1000px){
-  .home{
-    height:80%;
-  width: 80vw;
-  }
- }
+/* @font-face {
+font-family: 'pineapple';
+src: url(../assets/fonts/pixel.TTF);
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.hometext {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #00313f;
+}
+
+
 
 
 
 img.roadmap{
-  height:80%;
-  width: 65vw;
+  height:90%;
+  width: 100vh;
+  margin-top: -70px;
+  
   float: right;
-  margin-top: -15%;
-  margin-right: -8%;
+
   
 }
 .home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
   overflow-x: hidden;
   overflow-y: hidden;
+  padding-left: 50px;
 }
 
 /* Button element css */
@@ -26,4 +42,25 @@ img.roadmap{
   display:flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
+
+.mint_btn {
+  color: #002631;
+  font-size: 25px;
+  background-color: aqua;
+  padding: 15px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  border: 0px;
+  margin-top: 1px;
+}
+
+.mint_btn:hover {
+  cursor: pointer;
+  background-color: rgb(0, 189, 189);
+  color: white;
+  
+  
+  }
