@@ -46,7 +46,7 @@ function Navbar({setState}) {
           // console.log(jsonf);
           setName(jsonf.Username);
           setSuccess(true);
-          setState("true");
+          
         } catch (error) {
           console.log("Unable to Login !", "Error!", 5000);
         }
@@ -56,13 +56,18 @@ function Navbar({setState}) {
 
     const handleClick = async () => {
         setLoading(true);
-        const response = await identity.login({ accessLevel: 2 });
+        try {
+          const response = await identity.login({ accessLevel: 2 });
         console.log(response);
         const jsonObj = JSON.stringify(response);
         localStorage.setItem("payload", jsonObj);
         const publicKey = response.publicKeyAdded;
         fetchProfile(publicKey);
         setKey(publicKey);
+        setState("true",publicKey);
+        } catch (error) {
+         console.log(error); 
+        }
       };
 
     

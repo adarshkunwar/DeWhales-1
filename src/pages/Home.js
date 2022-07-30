@@ -3,13 +3,13 @@ import React,{useState} from 'react'
 import img from '../assets/landingimg.png'
 import '../assets/fonts/pineapple.ttf'
 import Confirmation from './Modals/Confirmation'
-export default function Home({valid}) {
+export default function Home({valid,ukey}) {
   const [modalOpen, setModalOpen] = useState(false);
   return (
   <>
     
     <div className='home'>
-    {modalOpen && <Confirmation setOpenModal={setModalOpen} />}
+    {modalOpen && <Confirmation setOpenModal={setModalOpen} ukey={ukey}/>}
       <div className='mobile'></div>
         <div className='hometext'>
         <h1>DeWhales is the semi-generative NFT project 
