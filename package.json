@@ -14,7 +14,8 @@
     "react-scripts": "^5.0.1",
     "react-spring": "^9.0.0-rc.3",
     "styled-components": "^5.3.5",
-    "superagent": "^3.5.2"
+    "superagent": "^3.5.2",
+    "tw-elements": "^1.0.0-alpha12"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,5 +40,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.7"
   }
 }
