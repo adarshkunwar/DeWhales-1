@@ -12,7 +12,7 @@ const host = "https://deso-backend.herokuapp.com";
 // const host = "http://localhost:4000";
 
 
-function Navbar({setState}) {
+function Navbar({setstate}) {
     const [sidebar, setSidebar] = useState(false);
     const [name, setName] = useState("User");
     const [success, setSuccess] = useState(false);
@@ -64,7 +64,7 @@ function Navbar({setState}) {
         const publicKey = response.publicKeyAdded;
         fetchProfile(publicKey);
         setKey(publicKey);
-        setState("true",publicKey);
+        setstate("true",publicKey);
         } catch (error) {
          console.log(error); 
         }

@@ -3,13 +3,25 @@ import React,{useState} from 'react'
 import img from '../assets/landingimg.png'
 import '../assets/fonts/pineapple.ttf'
 import Confirmation from './Modals/Confirmation'
+import { Nftmodal } from './Modals/Nftmodal';
 export default function Home({valid,ukey}) {
   const [modalOpen, setModalOpen] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
+  const [data, setData] = useState({hex:"",validity:false});
+  const handleModal =(data)=>{
+    setModalOpen(data)
+  }
+  const handleData = (hex,validity)=>{
+    setData({hex,validity});
+  }
+  console.log(data.hex);
+  console.log(openModal);
+  console.log(data.validity);
   return (
   <>
     
     <div className='home'>
-    {modalOpen && <Confirmation setOpenModal={setModalOpen} ukey={ukey}/>}
+    {modalOpen && <Confirmation handleModal={handleModal} handleData = {handleData} ukey={ukey}/>}
       <div className='mobile'></div>
         <div className='hometext'>
         <h1>DeWhales is the semi-generative NFT project 
@@ -19,7 +31,7 @@ export default function Home({valid,ukey}) {
              {valid && <button type="button" className="mint_btn" onClick={() => {
           setModalOpen(true);
         }} >MINT</button>}
-        
+        {data.validity && <Nftmodal handleData ={handleData} setOpenModal={setOpenModal}/>}
       </div>
         </div>
       

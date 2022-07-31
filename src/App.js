@@ -11,15 +11,15 @@ import { Team } from './pages/Team';
 function App() {
   const [valid, setValid] = useState(false);
   const [ukey, setUkey] = useState("");
-  const setState=(data,key)=>{
+  const setstate=(data,key)=>{
     setValid(data);
     setUkey(key);
   }
   return (
     <Router>
-      <Navbar setState={setState}/>
+      <Navbar setstate={setstate}/>
       <Routes>
-      <Route path='/' element= {<Home valid={valid} ukey={ukey}/> }/>
+      <Route exact path='/' element= {<Home valid={valid} ukey={ukey}/> }/>
       </Routes>
       <Routes>
       <Route exact path='/vision' element= {<Vision /> }/>
