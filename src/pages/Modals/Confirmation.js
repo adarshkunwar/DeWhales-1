@@ -39,7 +39,7 @@ const Confirmation = ({ handleModal, ukey,handleData }) => {
         console.log(signedTransHex);
         if (signedTransHex) {
           console.log("valid");
-          handleData(signedTransHex,true);
+          handleData(signedTransHex,true,1);
         }
         else {
           console.log("false,transhex");

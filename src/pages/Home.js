@@ -7,12 +7,13 @@ import { Nftmodal } from './Modals/Nftmodal';
 export default function Home({valid,ukey}) {
   const [modalOpen, setModalOpen] = useState(false);
   const [openModal, setOpenModal] = useState(false);
-  const [data, setData] = useState({hex:"",validity:false});
+  const [data, setData] = useState({hex:"",validity:false,counter:0});
   const handleModal =(data)=>{
     setModalOpen(data)
   }
-  const handleData = (hex,validity)=>{
-    setData({hex,validity});
+  const handleData = (hex,validity,count)=>{
+    count = data.counter+count;
+    setData({hex,validity,counter:count});
   }
   console.log(data.hex);
   console.log(openModal);
@@ -31,7 +32,7 @@ export default function Home({valid,ukey}) {
              {valid && <button type="button" className="mint_btn" onClick={() => {
           setModalOpen(true);
         }} >MINT</button>}
-        {!data.validity && <Nftmodal handleData ={handleData} setOpenModal={setOpenModal}/>}
+        {data.validity && <Nftmodal handleData ={handleData} setOpenModal={setOpenModal} data={data} ukey={ukey}/>}
       </div>
         </div>
     <img className='roadmap' src={img} alt='roadmap' />
