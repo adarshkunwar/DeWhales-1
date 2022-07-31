@@ -31,10 +31,9 @@ export default function Home({valid,ukey}) {
              {valid && <button type="button" className="mint_btn" onClick={() => {
           setModalOpen(true);
         }} >MINT</button>}
-        {data.validity && <Nftmodal handleData ={handleData} setOpenModal={setOpenModal}/>}
+        {!data.validity && <Nftmodal handleData ={handleData} setOpenModal={setOpenModal}/>}
       </div>
         </div>
-      
     <img className='roadmap' src={img} alt='roadmap' />
     </div>
   </>

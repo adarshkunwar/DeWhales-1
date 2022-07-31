@@ -20,7 +20,7 @@ src: url(../assets/fonts/pixel.TTF);
     flex-direction: column;
   }
 .hometext {
-  font-size: 10px;
+  font-size: 20px;
   margin-right:50px;
   padding-top: 45px;
 }
