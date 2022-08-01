@@ -31,7 +31,7 @@ const Confirmation = ({ handleModal, ukey,handleData,toast }) => {
         toast(' Oops! Your purse 👛 seems to be empty!', {
           type:"error",
           position: "bottom-right",
-          autoClose: 5000,
+          autoClose: 3000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
