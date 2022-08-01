@@ -4,6 +4,9 @@ import img from '../assets/landingimg.png'
 import '../assets/fonts/pineapple.ttf'
 import Confirmation from './Modals/Confirmation'
 import { Nftmodal } from './Modals/Nftmodal';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export default function Home({valid,ukey}) {
   const [modalOpen, setModalOpen] = useState(false);
   const [openModal, setOpenModal] = useState(false);
@@ -20,9 +23,8 @@ export default function Home({valid,ukey}) {
   console.log(data.validity);
   return (
   <>
-    
     <div className='home'>
-    {modalOpen && <Confirmation handleModal={handleModal} handleData = {handleData} ukey={ukey}/>}
+    {modalOpen && <Confirmation handleModal={handleModal} handleData = {handleData} ukey={ukey} toast={toast}/>}
       <div className='mobile'></div>
         <div className='hometext'>
         <h1>DeWhales is the semi-generative NFT project 
@@ -38,6 +40,21 @@ export default function Home({valid,ukey}) {
         </div>
     <img className='roadmap' src={img} alt='roadmap' />
     </div>
+    <div class="toast">
+    <ToastContainer
+          position="top-left"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          theme="dark"
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          />
+    </div>
+    
   </>
   )
 }

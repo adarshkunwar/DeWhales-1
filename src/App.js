@@ -34,7 +34,6 @@ function App() {
       <Route exact path='/team' element= {<Team /> }/>
       </Routes>
     </Router>
-    
   );
 }
 

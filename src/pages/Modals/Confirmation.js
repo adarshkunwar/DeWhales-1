@@ -6,7 +6,7 @@ import './Confirmation.css'
 
 const host = "https://deso-backend.herokuapp.com";
 const recieverAddress = 'BC1YLh89nsbp6TYyoPUu4UXUSdaCSP7eN5rkMGgZuQSRQgpp3ibf9P6'
-const Confirmation = ({ handleModal, ukey,handleData }) => {
+const Confirmation = ({ handleModal, ukey,handleData,toast }) => {
   const closeRef = useRef(null);
   // const [hex, setHex] = useState("");
   // const [validity, setValidity] = useState(false);
@@ -20,15 +20,24 @@ const Confirmation = ({ handleModal, ukey,handleData }) => {
         body: JSON.stringify({
           SenderPublicKeyBase58Check: ukey,
           RecipientPublicKeyOrUsername: recieverAddress,
-          // AmountNanos: 3000000000,
-          AmountNanos: 300000,
+          AmountNanos: 3000000000,
+          // AmountNanos: 300000,
           MinFeeRateNanosPerKb: 1000
         }),
       });
       const json = await response.json();
       console.log(json);
       if (json.error) {
-        console.log('Unable to mint from your DeSo account! Please check your wallet  ! ');
+        toast(' Oops! Your purse 👛 seems to be empty!', {
+          type:"error",
+          position: "bottom-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          });
       }
       else {
         const transHex = await json.TransactionHex;
@@ -100,6 +109,7 @@ const Confirmation = ({ handleModal, ukey,handleData }) => {
           </div>
         </div>
       </div>
+      
     </>
   )
 }
