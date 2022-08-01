@@ -6,7 +6,7 @@ export const Gallery = () => {
   return (
     
    <>
-   <h1 className='gallery'>Will be revealed after generative soldout!</h1>
+   <h1 className='gallery'>Soon after soldout!</h1>
    </>
   )
 }

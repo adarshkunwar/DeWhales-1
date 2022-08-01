@@ -73,14 +73,15 @@ img.roadmap{
   padding: 15px;
 }
 .space {
-  padding: 8px;
+  padding: 20px;
 }
 
 .mint_btn {
-  color: #002631;
-  font-size: 1.4em;
-  background-color: aqua;
-  padding: 0.7rem;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 40px;
+  background-color: #032854;
+  padding: 1.0rem;
   
   font-weight: bold;
   transition-duration: 0.4s;
@@ -91,7 +92,7 @@ img.roadmap{
 .mint_btn:hover {
   cursor: pointer;
   background-color: rgb(0, 189, 189);
-  color: white;
+  color: black;
   
   
   }

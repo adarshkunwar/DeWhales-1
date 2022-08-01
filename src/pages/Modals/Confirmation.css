@@ -14,12 +14,15 @@
     
   }
   
+  .titleconfirmation {
+    color: #032854;
+  }
   .modalContainer {
     width: 500px;
     height: 500px;
     border-radius: 12px;
     background-color: white;
-    box-shadow: rgba(21, 138, 145, 0.35) 0px 5px 15px;
+    box-shadow: rgba(6, 84, 88, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
     padding: 25px;
@@ -64,13 +67,21 @@
     height: 45px;
     margin: 10px;
     border: none;
-    background-color: cornflowerblue;
+    background-color: #032854;
     color: white;
     border-radius: 8px;
     font-size: 20px;
     cursor: pointer;
   }
+
+  .modalContainer .footer button:hover {
+    background-color: #355b88;
+  }
   
   #cancelBtn {
     background-color: crimson;
+  }
+
+  #cancelBtn:hover {
+    background-color: rgb(138, 22, 45);
   }
