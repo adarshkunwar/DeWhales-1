@@ -5,6 +5,10 @@ src: url(../assets/fonts/pixel.TTF);
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+body {
+  overflow: hidden;
+}
+
 .hometext {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
@@ -20,20 +24,21 @@ src: url(../assets/fonts/pixel.TTF);
     flex-direction: column;
   }
 .hometext {
-  font-size: 20px;
+  font-size: 10px;
   margin-right:50px;
-  padding-top: 45px;
+  padding-top: 50px;
 }
 
 .mint_btn {
   font-size: 10px;
-  padding: 5px;
+  padding: 10px;
 }
 
 img.roadmap {
   margin-right: 35px;
   height: 400px;
   width: 400px;
+  margin-bottom: 10px;
 }
 
 }
@@ -42,8 +47,9 @@ img.roadmap {
 img.roadmap{
   min-height:90%;
   min-width: 48%;
-  margin-top: -20px;
+  margin-top: -50px;
   float: right;
+  margin-left: -10px;
 
   
 }
@@ -66,23 +72,27 @@ img.roadmap{
   align-items: center;
   padding: 15px;
 }
+.space {
+  padding: 20px;
+}
 
 .mint_btn {
-  color: #002631;
-  font-size: 1.5em;
-  background-color: aqua;
-  padding: 0.8rem;
-  border-radius: 50px;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 40px;
+  background-color: #032854;
+  padding: 1.0rem;
+  
   font-weight: bold;
   transition-duration: 0.4s;
   border: 0px;
-  margin-top: 1px;
+  margin-top: 10px;
 }
 
 .mint_btn:hover {
   cursor: pointer;
   background-color: rgb(0, 189, 189);
-  color: white;
+  color: black;
   
   
   }

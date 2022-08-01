@@ -87,14 +87,14 @@ const Confirmation = ({ handleModal, ukey,handleData,toast }) => {
                 handleModal(false);
               }}
             >
-              <CgCloseO size={35}/>
+              <CgCloseO size={35} style={{color:'#032854'}} />
             </button>
           </div>
-          <div className="title">
-            <h1>Are You Sure You Want to Continue?</h1>
+          <div className="titleconfirmation">
+            <h1>Are you sure to continue?</h1>
           </div>
           <div className="body">
-            <p>Please allow access to your account to mint NFT. We are requesting you to grant<b> 3.0 $DESO</b> for NFT to mint.</p>
+            <p>Please allow access to your account to mint NFT. We are requesting you to grant<b> 3 $DESO</b> for NFT to mint.</p>
           </div>
           <div className="footer">
             <button
@@ -105,7 +105,7 @@ const Confirmation = ({ handleModal, ukey,handleData,toast }) => {
             >
               Cancel
             </button>
-            <button onClick={handleAllowBtn}>Continue</button>
+            <button onClick={handleAllowBtn}>Allow</button>
           </div>
         </div>
       </div>
