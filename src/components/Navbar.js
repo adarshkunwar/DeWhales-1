@@ -6,6 +6,8 @@ import { SidebarData, footerdata} from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons'
 import img from '../assets/navbarlogo.png';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { identity } from "bitclout-sdk";
 const host = "https://deso-backend.herokuapp.com";
@@ -46,7 +48,16 @@ function Navbar({setstate}) {
           // console.log(jsonf);
           setName(jsonf.Username);
           setSuccess(true);
-          
+          toast('👋  Welcome Whale!', {
+            type:"success",
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
         } catch (error) {
           console.log("Unable to Login !", "Error!", 5000);
         }
@@ -82,7 +93,7 @@ function Navbar({setstate}) {
             </div>
             <img src={img} alt='img' className='navimg' />
             <div className='mybutton'>
-             <button type="button" className="mybtn" onClick={handleClick}>{success?`${name}`:loading?"Loading..":"Connect Wallet"}</button> 
+             <button type="button" className="mybtn" onClick={handleClick}>{success?`${name}`:loading?"Loading...":"Connect Wallet"}</button> 
         </div>
             
         </div>
@@ -127,6 +138,18 @@ function Navbar({setstate}) {
             
         </nav>
         </IconContext.Provider>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          theme="dark"
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          />
     </>
   )
 }
