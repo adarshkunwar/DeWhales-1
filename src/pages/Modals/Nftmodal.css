@@ -51,16 +51,26 @@
       align-items: center;
       font-size: 1.7rem;
       text-align: center;
+     
+      margin-top: -5px;
     }
     .body1>img{
       width: 80%;
-      height: 90%;
+      height: 80%;
+      margin-bottom: 40px;
       object-fit: contain;
+      
+    }
+    
+    .snno {
+      font-size: 25px;
     }
     .traits1{
       text-align: center;
+      font-size: 20px;
       width: 100%;
       height: 100px;
+      margin-top: -40px;
     }
     
     .modalContainer1 .footer1 {
@@ -68,18 +78,22 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: -20px;
     }
     
     .modalContainer1 .footer1 button {
-      width: 150px;
+      width: 125px;
       height: 45px;
       margin: 10px;
       border: none;
-      background-color: rgb(79, 214, 216);
+      background-color: #032854;
       color: white;
-      border-radius: 8px;
+      border-radius: 80px;
       font-size: 20px;
       cursor: pointer;
+    }
+    .modalContainer1 .footer1 button:hover {
+      background-color: rgb(0, 189, 189);
     }
     
     #cancelBtn1 {
