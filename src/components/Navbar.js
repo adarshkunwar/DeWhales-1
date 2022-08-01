@@ -52,6 +52,7 @@ function Navbar({setstate}) {
             type:"success",
             position: "bottom-right",
             autoClose: 3000,
+            style:{color:'aqua'},
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
