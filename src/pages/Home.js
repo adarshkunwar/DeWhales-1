@@ -34,6 +34,7 @@ export default function Home({valid,ukey}) {
         }} >MINT</button>}
         {data.validity && <Nftmodal handleData ={handleData} setOpenModal={setOpenModal} data={data} ukey={ukey}/>}
       </div>
+      <div className='space'></div>
         </div>
     <img className='roadmap' src={img} alt='roadmap' />
     </div>
