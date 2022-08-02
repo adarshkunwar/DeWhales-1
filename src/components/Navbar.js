@@ -6,7 +6,6 @@ import { SidebarData, footerdata} from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons'
 import img from '../assets/navbarlogo.png';
-import {NotificationContainer, NotificationManager} from 'react-notifications';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { identity } from "bitclout-sdk";
@@ -48,7 +47,6 @@ function Navbar({setstate}) {
           // console.log(jsonf);
           setName(jsonf.Username);
           setSuccess(true);
-          NotificationManager.success(`🐳 @${jsonf.Username}`,'Welcome!',1000);
         } catch (error) {
           console.log("Unable to Login !", "Error!", 5000);
         }
@@ -129,7 +127,6 @@ function Navbar({setstate}) {
             
         </nav>
         </IconContext.Provider>
-          <NotificationContainer/>
     </>
   )
 }
