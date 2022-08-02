@@ -3,13 +3,14 @@ import { identity } from "bitclout-sdk";
 import { CgCloseO } from "react-icons/cg";
 import './Confirmation.css'
 
-
 const host = "https://deso-backend.herokuapp.com";
 const recieverAddress = 'BC1YLh89nsbp6TYyoPUu4UXUSdaCSP7eN5rkMGgZuQSRQgpp3ibf9P6'
-const Confirmation = ({ handleModal, ukey,handleData,toast }) => {
+const Confirmation = ({ handleModal, ukey,handleData,NotificationManager }) => {
   const closeRef = useRef(null);
-  // const [hex, setHex] = useState("");
-  // const [validity, setValidity] = useState(false);
+  
+  const nanos = 3000000000;
+
+
   const getTransactionHex = async () => {
     try {
       const response = await fetch(`${host}/api/v0/send-deso`, {
@@ -20,25 +21,15 @@ const Confirmation = ({ handleModal, ukey,handleData,toast }) => {
         body: JSON.stringify({
           SenderPublicKeyBase58Check: ukey,
           RecipientPublicKeyOrUsername: recieverAddress,
-          // AmountNanos: 3000000000,
-          AmountNanos: 300000,
+          AmountNanos: nanos,
+          // AmountNanos: 300000,
           MinFeeRateNanosPerKb: 1000
         }),
       });
       const json = await response.json();
       console.log(json);
       if (json.error) {
-        toast(' Oops! Your purse 👛 seems to be empty!', {
-          type:"error",
-          position: "bottom-right",
-          style:{color:'aqua'},
-          autoClose: 3000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          });
+        NotificationManager.error('Insufficient Balance.', 'Sorry!');
       }
       else {
         const transHex = await json.TransactionHex;
@@ -74,6 +65,7 @@ const Confirmation = ({ handleModal, ukey,handleData,toast }) => {
 
 
   const handleAllowBtn = async () => {
+
     console.log('allowbutton clicked');
     getTransactionHex();
     closeRef.current.click();

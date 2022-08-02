@@ -4,7 +4,9 @@ import img from '../assets/landingimg.png'
 import '../assets/fonts/pineapple.ttf'
 import Confirmation from './Modals/Confirmation'
 import { Nftmodal } from './Modals/Nftmodal';
-import { ToastContainer, toast } from 'react-toastify';
+// import { ToastContainer, toast } from 'react-toastify';
+import {NotificationContainer, NotificationManager} from 'react-notifications';
+import 'react-notifications/lib/notifications.css';
 export default function Home({valid,ukey}) {
   const [modalOpen, setModalOpen] = useState(false);
   const [openModal, setOpenModal] = useState(false);
@@ -22,8 +24,8 @@ export default function Home({valid,ukey}) {
   <>
     
     <div className='home'>
-    {modalOpen && <Confirmation handleModal={handleModal} handleData = {handleData} ukey={ukey} toast={toast}/>}
-    {data.mint && <Confirmation handleModal={handleModal} handleData = {handleData} ukey={ukey} toast={toast}/>}
+    {modalOpen && <Confirmation handleModal={handleModal} handleData = {handleData} ukey={ukey} NotificationManager={NotificationManager}/>}
+    {data.mint && <Confirmation handleModal={handleModal} handleData = {handleData} ukey={ukey} NotificationManager={NotificationManager}/>}
       <div className='mobile'></div>
         <div className='hometext'>
         <h1>DeWhales is the semi-generative NFT project 
@@ -38,7 +40,8 @@ export default function Home({valid,ukey}) {
       <div className='space'></div>
         </div>
     <img className='roadmap' src={img} alt='roadmap' />
-    <ToastContainer
+    </div>
+    {/* <ToastContainer
           position="top-right"
           autoClose={5000}
           hideProgressBar={false}
@@ -49,8 +52,8 @@ export default function Home({valid,ukey}) {
           pauseOnFocusLoss
           draggable
           pauseOnHover
-          />
-    </div>
+          /> */}
+      <NotificationContainer/>
   </>
   )
 }

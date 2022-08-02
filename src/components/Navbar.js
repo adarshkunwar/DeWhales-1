@@ -6,7 +6,7 @@ import { SidebarData, footerdata} from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons'
 import img from '../assets/navbarlogo.png';
-import { ToastContainer, toast } from 'react-toastify';
+import {NotificationContainer, NotificationManager} from 'react-notifications';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { identity } from "bitclout-sdk";
@@ -48,17 +48,7 @@ function Navbar({setstate}) {
           // console.log(jsonf);
           setName(jsonf.Username);
           setSuccess(true);
-          toast('👋  Welcome Whale 🐳!', {
-            type:"success",
-            position: "bottom-right",
-            autoClose: 3000,
-            style:{color:'aqua'},
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            });
+          NotificationManager.success(`🐳 @${jsonf.Username}`,'Welcome!');
         } catch (error) {
           console.log("Unable to Login !", "Error!", 5000);
         }
@@ -139,18 +129,7 @@ function Navbar({setstate}) {
             
         </nav>
         </IconContext.Provider>
-        <ToastContainer
-          position="top-right"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          theme="dark"
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          />
+          <NotificationContainer/>
     </>
   )
 }
