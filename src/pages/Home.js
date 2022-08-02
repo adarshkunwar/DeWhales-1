@@ -8,13 +8,12 @@ import { ToastContainer, toast } from 'react-toastify';
 export default function Home({valid,ukey}) {
   const [modalOpen, setModalOpen] = useState(false);
   const [openModal, setOpenModal] = useState(false);
-  const [data, setData] = useState({hex:"",validity:false,counter:0});
+  const [data, setData] = useState({hex:"",validity:false,mint:false});
   const handleModal =(data)=>{
     setModalOpen(data)
   }
-  const handleData = (hex,validity,count)=>{
-    count = data.counter+count;
-    setData({hex,validity,counter:count});
+  const handleData = (hex,validity,mint)=>{
+    setData({hex,validity,mint});
   }
   console.log(data.hex);
   console.log(openModal);
@@ -24,6 +23,7 @@ export default function Home({valid,ukey}) {
     
     <div className='home'>
     {modalOpen && <Confirmation handleModal={handleModal} handleData = {handleData} ukey={ukey} toast={toast}/>}
+    {data.mint && <Confirmation handleModal={handleModal} handleData = {handleData} ukey={ukey} toast={toast}/>}
       <div className='mobile'></div>
         <div className='hometext'>
         <h1>DeWhales is the semi-generative NFT project 

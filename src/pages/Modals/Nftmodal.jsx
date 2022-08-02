@@ -47,7 +47,7 @@ export const Nftmodal = ({handleData,ukey,data}) => {
     <div className="modalContainer1">
       <div className="titleCloseBtn1">
       <div className="title1">
-        <h2 className='snno'>S.N:{nftName}</h2>
+        <h2 className='snno'>S.N:&nbsp;{nftName}</h2>
       </div>
         <button
           onClick={() => {
@@ -69,11 +69,11 @@ export const Nftmodal = ({handleData,ukey,data}) => {
       <div className="footer1">
         <button
           onClick={() => {
-            handleData("",false);
+            handleData("",false,true);
           }}
           id="mintBtn"
         >
-          Mint Again
+         Mint Again
         </button>
       </div>
     </div>
