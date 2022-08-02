@@ -20,8 +20,8 @@ const Confirmation = ({ handleModal, ukey,handleData,toast }) => {
         body: JSON.stringify({
           SenderPublicKeyBase58Check: ukey,
           RecipientPublicKeyOrUsername: recieverAddress,
-          AmountNanos: 3000000000,
-          // AmountNanos: 300000,
+          // AmountNanos: 3000000000,
+          AmountNanos: 300000,
           MinFeeRateNanosPerKb: 1000
         }),
       });

@@ -48,17 +48,17 @@ function Navbar({setstate}) {
           // console.log(jsonf);
           setName(jsonf.Username);
           setSuccess(true);
-          // toast('👋  Welcome Whale!', {
-          //   type:"success",
-          //   position: "bottom-right",
-          //   autoClose: 3000,
-          //   style:{color:'aqua'},
-          //   hideProgressBar: false,
-          //   closeOnClick: true,
-          //   pauseOnHover: true,
-          //   draggable: true,
-          //   progress: undefined,
-          //   });
+          toast('👋  Welcome Whale 🐳!', {
+            type:"success",
+            position: "bottom-right",
+            autoClose: 3000,
+            style:{color:'aqua'},
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
         } catch (error) {
           console.log("Unable to Login !", "Error!", 5000);
         }
