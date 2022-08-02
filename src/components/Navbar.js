@@ -48,7 +48,7 @@ function Navbar({setstate}) {
           // console.log(jsonf);
           setName(jsonf.Username);
           setSuccess(true);
-          NotificationManager.success(`🐳 @${jsonf.Username}`,'Welcome!');
+          NotificationManager.success(`🐳 @${jsonf.Username}`,'Welcome!',1000);
         } catch (error) {
           console.log("Unable to Login !", "Error!", 5000);
         }

@@ -7,8 +7,6 @@ const host = "https://deso-backend.herokuapp.com";
 const recieverAddress = 'BC1YLh89nsbp6TYyoPUu4UXUSdaCSP7eN5rkMGgZuQSRQgpp3ibf9P6'
 const Confirmation = ({ handleModal, ukey,handleData,NotificationManager }) => {
   const closeRef = useRef(null);
-  
-  const nanos = 3000000000;
 
 
   const getTransactionHex = async () => {
@@ -21,8 +19,8 @@ const Confirmation = ({ handleModal, ukey,handleData,NotificationManager }) => {
         body: JSON.stringify({
           SenderPublicKeyBase58Check: ukey,
           RecipientPublicKeyOrUsername: recieverAddress,
-          AmountNanos: nanos,
-          // AmountNanos: 300000,
+          // AmountNanos: 3000000000,
+          AmountNanos: 300000,
           MinFeeRateNanosPerKb: 1000
         }),
       });
@@ -59,7 +57,7 @@ const Confirmation = ({ handleModal, ukey,handleData,NotificationManager }) => {
         // console.log(validity);
       }
     } catch (error) {
-      console.log('Unable to mint from your DESO account ! Please check your wallet !');
+      console.log('Unable to mint from your DESO account ! Please check your wallet !',1000);
     }
   }
 
