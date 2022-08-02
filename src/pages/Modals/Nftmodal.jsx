@@ -68,6 +68,7 @@ export const Nftmodal = ({handleData,ukey,data}) => {
       </div>
       <div className="footer1">
         <button
+        
           onClick={() => {
             handleData("",false,true);
           }}
