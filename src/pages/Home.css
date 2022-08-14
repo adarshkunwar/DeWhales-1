@@ -25,9 +25,9 @@ src: url(../assets/fonts/pixel.TTF);
   padding-top: 50px;
 }
 
-.mint_btn {
-  font-size: 10px;
-  padding: 10px;
+.mintbtn {
+  font-size: 15px;
+ padding: -7;
 }
 
 img.roadmap {
