@@ -169,7 +169,7 @@ li.nav-text {
 
 .foot-items svg {
     border-radius: 15px;
-    border-style: double;
+    border-style: solid;
     border-width: 2px;
 
     padding: 5px 5px;
